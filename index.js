@@ -8,22 +8,17 @@ document.getElementById("postButton").addEventListener("click", function () {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      start: "2024-04-24T10:00:00.000Z",
-      end: "2024-04-24T10:45:00.000Z",
-      eventTypeId: "641549",
-      responses: {
-        name: "John",
-        email: "johndoe@gmail.com",
-        metadata: {},
+      "start": "2024-04-24T10:00:00.000Z",
+      "eventTypeId": "641549",
+      "metadata": {},
+      "responses": {
+        "name": "John",
+        "email": "johndoe@gmail.com",
       },
-      metadata: {},
-      timeZone: "Europe/Zurich",
-      language: "en",
-      title: "XXXXX",
-      description: null,
-      status: "PENDING",
-      smsReminderNumber: null,
-    }),
+      "timeZone": "Europe/Zurich",
+      "language": "en",
+      "status": "ACCEPTED"
+    })
   })
     .then((response) => {
       console.log("Response status:", response.status);
